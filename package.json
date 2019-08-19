@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build": "ghost start --development"
+    "build": "node ./current/index.js --development"
   }
 }
