@@ -1,18 +1,12 @@
 {
   "name": "melfina",
   "alias": "melfina.network",
-  "builds": [
-    // {
-    //   "src": "public/**/*",
-    //   "use": "@now/static"
-    // },
-    {
-      "src": "current/**/*",
-      "use": "@now/node-server"
-    }
-  ],
+  "builds": [{"current": "*.js", "use": "@now/node"}],
   "routes": [
-    // { "src": "/", "dest": "public/index.html" },
+    {
+      "src": "/",
+      "dest": "public/index.html"
+    },
     {
       "src": "/",
       "dest": "current/index.js"
