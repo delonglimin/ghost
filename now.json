@@ -1,6 +1,6 @@
 {
 	"builds": [
-		{ "src": "current/*.js", "use": "@now/node" }
+		{ "src": "current/*.js --development", "use": "@now/node" }
 	],
 	"routes": [
 		{ "src": "/", "dest": "current/index.js" },
