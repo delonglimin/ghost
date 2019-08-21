@@ -98,7 +98,8 @@ exports.checkUrlProtocol = function checkUrlProtocol() {
  */
 exports.sanitizeDatabaseProperties = function sanitizeDatabaseProperties() {
     var database = this.get('database');
-
+    console.log("===================")
+    console.log(database)
     if (this.get('database:client') === 'mysql') {
         delete database.connection.filename;
     } else {
