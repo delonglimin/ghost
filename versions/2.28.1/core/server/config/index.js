@@ -32,10 +32,11 @@ _private.loadNconf = function loadNconf(options) {
         parseValues: true
     });
 
-    nconf.file('custom-env', path.join(customConfigPath, 'config.' + env + '.json'));
-    nconf.file('default-env', path.join(baseConfigPath, 'env', 'config.' + env + '.json'));
-    nconf.file('defaults', path.join(baseConfigPath, 'defaults.json'));
+    //nconf.file('custom-env', path.join(customConfigPath, 'config.' + env + '.json'));
+    nconf.file('default-env', './env/config.production.json');
+    nconf.file('defaults', './env/defaults.json');
 
+    nconf.set()
     /**
      * transform all relative paths to absolute paths
      * transform sqlite filename path for Ghost-CLI
@@ -44,9 +45,6 @@ _private.loadNconf = function loadNconf(options) {
     nconf.isPrivacyDisabled = localUtils.isPrivacyDisabled.bind(nconf);
     nconf.getContentPath = localUtils.getContentPath.bind(nconf);
     nconf.sanitizeDatabaseProperties = localUtils.sanitizeDatabaseProperties.bind(nconf);
-    console.log(env)
-    console.log("--------------------")
-    console.log(nconf)
     nconf.doesContentPathExist = localUtils.doesContentPathExist.bind(nconf);
 
     nconf.sanitizeDatabaseProperties();
