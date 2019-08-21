@@ -32,11 +32,10 @@ _private.loadNconf = function loadNconf(options) {
         parseValues: true
     });
 
-    //nconf.file('custom-env', path.join(customConfigPath, 'config.' + env + '.json'));
-    nconf.file('default-env', './env/config.production.json');
-    nconf.file('defaults', './env/defaults.json');
-
-    nconf.set()
+    nconf.file('custom-env', path.join(customConfigPath, 'config.' + env + '.json'));
+    nconf.file('default-env', 'current/core/server/config/env/config.produnction.json');
+    nconf.file('defaults', path.join(baseConfigPath, 'defaults.json'));
+    
     /**
      * transform all relative paths to absolute paths
      * transform sqlite filename path for Ghost-CLI
