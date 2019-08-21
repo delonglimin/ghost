@@ -143,3 +143,9 @@
 {"name":"Log","hostname":"LAPTOP-361AV99C","pid":16016,"level":30,"msg":"Ctrl+C to shut down","time":"2019-08-21T09:31:12.871Z","v":0}
 {"name":"Log","hostname":"LAPTOP-361AV99C","pid":16016,"level":30,"msg":"Ghost boot 5.882s","time":"2019-08-21T09:31:12.872Z","v":0}
 {"name":"Log","hostname":"LAPTOP-361AV99C","pid":16016,"level":40,"msg":"Ghost has shut down","time":"2019-08-21T09:31:16.222Z","v":0}
+{"name":"Log","hostname":"LAPTOP-361AV99C","pid":14764,"level":30,"msg":"Ghost is running in development...","time":"2019-08-21T09:33:49.206Z","v":0}
+{"name":"Log","hostname":"LAPTOP-361AV99C","pid":14764,"level":30,"msg":"Listening on: 127.0.0.1:2368","time":"2019-08-21T09:33:49.207Z","v":0}
+{"name":"Log","hostname":"LAPTOP-361AV99C","pid":14764,"level":30,"msg":"Url configured as: http://localhost:2368/","time":"2019-08-21T09:33:49.208Z","v":0}
+{"name":"Log","hostname":"LAPTOP-361AV99C","pid":14764,"level":30,"msg":"Ctrl+C to shut down","time":"2019-08-21T09:33:49.209Z","v":0}
+{"name":"Log","hostname":"LAPTOP-361AV99C","pid":14764,"level":30,"msg":"Ghost boot 5.564s","time":"2019-08-21T09:33:49.211Z","v":0}
+{"name":"Log","hostname":"LAPTOP-361AV99C","pid":14764,"level":40,"msg":"Ghost has shut down","time":"2019-08-21T09:33:51.047Z","v":0}

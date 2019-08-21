@@ -33,7 +33,7 @@ _private.loadNconf = function loadNconf(options) {
     });
 
     nconf.file('custom-env', path.join(customConfigPath, 'config.' + env + '.json'));
-    nconf.file('default-env', 'current/core/server/config/env/config.produnction.json');
+    nconf.file('default-env', 'config.produnction.json');
     nconf.file('defaults', path.join(baseConfigPath, 'defaults.json'));
     
     /**
