@@ -44,6 +44,7 @@ _private.loadNconf = function loadNconf(options) {
     nconf.isPrivacyDisabled = localUtils.isPrivacyDisabled.bind(nconf);
     nconf.getContentPath = localUtils.getContentPath.bind(nconf);
     nconf.sanitizeDatabaseProperties = localUtils.sanitizeDatabaseProperties.bind(nconf);
+    console.log(env)
     console.log("--------------------")
     console.log(nconf)
     nconf.doesContentPathExist = localUtils.doesContentPathExist.bind(nconf);
