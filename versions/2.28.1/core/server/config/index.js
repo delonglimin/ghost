@@ -33,9 +33,37 @@ _private.loadNconf = function loadNconf(options) {
     });
 
     nconf.file('custom-env', path.join(customConfigPath, 'config.' + env + '.json'));
-    nconf.file('default-env', 'config.produnction.json');
+    //nconf.file('default-env', 'config.produnction.json');
     nconf.file('defaults', path.join(baseConfigPath, 'defaults.json'));
     
+    nconf.add('default-env', { type: 'literal', store:{
+      "url": "http://localhost:2368",
+      "database": {
+          "client": "sqlite3",
+          "connection": {
+              "filename": "content/data/ghost-dev.db"
+          },
+          "debug": false
+      },
+      "paths": {
+          "contentPath": "content/"
+      },
+      "privacy": {
+          "useRpcPing": false,
+          "useUpdateCheck": true
+      },
+      "useMinFiles": false,
+      "caching": {
+          "theme": {
+              "maxAge": 0
+          },
+          "admin": {
+              "maxAge": 0
+          }
+      }
+    }
+    });
+
     /**
      * transform all relative paths to absolute paths
      * transform sqlite filename path for Ghost-CLI
